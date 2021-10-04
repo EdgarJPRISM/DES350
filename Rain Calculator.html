@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html>
+	
+<head>
+	
+<meta charset="UTF-8">
+<title>My Calculator</title>
+	
+	
+	<style>
+		
+/*		Body Styles*/
+		
+		body{
+			background-image: url("Calc mood board-08.svg");
+			background-position: center;
+			background-size: auto;
+			margin: 100px;
+			font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	
+			
+		}
+		
+		
+		
+/*		OVERALL CENTERING BASED ON WIDTH OF MY CALCULATOR*/
+		#myCalculator{
+			margin-left: calc(50% - 200px); 
+			margin-top: 200px;
+			
+		}
+		
+		}
+		
+		.cm-tag{color: aliceblue;
+		}
+		
+		#display{
+			width: 350px;
+			background-color: transparent;
+			text-align: right;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 50px;
+			border-radius: 100px;
+			border: none;
+			height: 70px;
+			color:#FFFFFF;
+			color: #FFFFFF;
+			margin-top: 100px;
+			margin-left: 30px;
+			
+			
+				
+		}
+		
+		
+/*		START OF CLASSES*/
+		.number{
+			width: 70px;
+			height: 70px;
+			color: white;
+			border: none;
+			font-size: 30px;
+			padding-right: 0px;
+			margin-right: 25px; 
+			margin-bottom: 10px;
+			
+			
+		
+		
+			
+			
+		
+				
+		}
+		
+		
+		.number:hover{
+			background-color:lavender;
+			width: 80px; 
+			height: 80px;
+			border: 2px;
+
+		
+		}
+		
+		.operator:hover{
+			background-color: #FCAD43;
+			width: 80px; 
+			height: 80px;
+			border: 2px;
+			
+		
+		}
+		
+		
+		.operator{
+			width: 70px;
+			height: 70px;
+			background-color: lightpink;
+			border: none;
+			color: aliceblue;
+			font-size: 30px;
+			margin-right: 25px;
+			
+		}
+		
+		
+		
+		#one{
+			background-color: transparent;
+			margin-top: 100px;
+			background-image:url("Rain Drops-01.svg");
+			
+			
+		}
+		
+		#two{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-01.svg");
+		}
+		
+		#three{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-01.svg");
+		}
+		
+		#add{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-01.svg");
+		}
+		
+		#four{
+			background-color:transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-05.svg");
+		}
+		
+		#five{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-05.svg");
+		}
+		
+		#six{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-05.svg");
+		}
+		
+		#subtract{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-05.svg");
+		}
+		
+		#seven{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-09.svg");
+		}
+		
+		#eight{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-09.svg");
+		}
+		
+		#nine{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-09.svg");
+		}
+		
+		#multiply{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-09.svg");
+		}
+		
+		#zero{
+			background-color:transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-13.svg");
+		}
+		
+		
+		#period{
+			border-radius: 100px; 
+			background-color: transparent;
+			background-image: url("Rain Drops-13.svg");
+		}
+		
+		#divide{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-13.svg");
+		}
+		
+		#percent{
+			background-color: transparent;
+			border-radius: 100px;
+			background-image: url("Rain Drops-13.svg");
+		}
+		
+		
+		#eql{
+			width: 70px;
+			border-radius: 100px;
+			background-color: transparent;
+			margin-right: 250px;
+			
+		
+		}
+		
+		#clr{
+			width: 70px;
+			border-radius: 100px;
+			background-color: transparent;
+		}
+		
+		.inputRow{
+			margin: 15px;
+			padding: 0;
+			font-size: 50px;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+	
+
+	
+<form name="calculator">
+
+<div id="myCalculator">
+	
+<div id="top_display">
+<input type="text" name="display" id="display" disabled>
+</div>
+	
+<div class="inputRow">
+	<input id="one" type="button" class="number" value="1" onclick="calculator.display.value+='1'">
+	
+	<input id="two" type="button" class="number" value="2" onclick="calculator.display.value+='2'">
+	<input id="three" type="button" class="number" value="3" onclick="calculator.display.value+='3'">
+	<input  id="add" type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
+	</div>
+	
+	
+	
+<div class="inputRow">
+	<input id="four" type="button" class="number" value="4" onclick="calculator.display.value+='4'">
+	<input id="five" type="button" class="number" value="5" onclick="calculator.display.value+='5'">
+	<input id="six" type="button" class="number" value="6" onclick="calculator.display.value+='6'">
+	<input id="subtract" type="button" class="operator" name="add" value="-" onclick="calculator.display.value +='-'">
+	</div>
+	
+	
+	
+<div class="inputRow">
+	<input id="seven" type="button" class="number" value="7" onclick="calculator.display.value+='7'">
+	<input id="eight" type="button" class="number" value="8" onclick="calculator.display.value+='8'">
+	<input id="nine" type="button" class="number" value="9" onclick="calculator.display.value+='9'">
+	<input id="multiply" type="button" class="operator" name="add" value="*" onclick="calculator.display.value +='*'">
+	</div>
+	
+	
+	
+<div class="inputRow">
+	<input id="zero" type="button" class="number" value="0" onclick="calculator.display.value+='0'">
+	<input id="period" type="button" class="operator" name="add" value="." onclick="calculator.display.value +='.'">
+	<input id="percent" type="button" class="operator" name="percent" value="%" onClick="calculator.display.value +='%'">
+	<input id="divide" type="button" class="operator" name="add" value="/" onclick="calculator.display.value +='/'">
+	</div>
+	
+
+	
+	
+<div class="inputRow">
+	
+	<input id="eql" type="button" class="operator" name="=" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
+	<input id="clr" type="button" class="operator" name="C" value="C" onclick="calculator.display.value =''">
+	</div>
+	
+</div>
+	
+</form>
+</body>
+</html>
+
