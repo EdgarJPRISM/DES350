@@ -6,11 +6,378 @@
 	
 	<style>
 		body {
-		background-image: url("Calc mood board-09.svg");
 		background-position: center;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		padding-left: 5%;
-		padding-top: 5%
+		padding-top: 5%;
+		color: white;
+		background-color: black;
+		
+		}
+		
+		.circle{
+			  width: 200px;
+              height: 200px;
+              background: #f18287;
+              border-radius: 50%;
+			  opacity: .80;
+			}
+		.orangecircle{
+			  width: 200px;
+              height: 200px;
+              background: #fd8100;
+              border-radius: 50%;
+			  opacity: .80;
+			  margin-top: -200px;
+			  margin-left: 145px
+		}
+		
+		.yellowcircle{
+			  width: 200px;
+              height: 200px;
+              background: #ffd746;
+              border-radius: 50%;
+			  opacity: .80;
+			  margin-top: -200px;
+			  margin-left: 290px;
+		}
+			
+		.greencircle{
+			  width: 200px;
+              height: 200px;
+              background: #00b3a6;
+              border-radius: 50%;
+			  opacity: .80;
+			  margin-top: -200px;
+			  margin-left: 435px;
+		}
+		
+		.bluecircle{
+			  width: 200px;
+              height: 200px;
+              background: #85d3ea;
+              border-radius: 50%;
+			  opacity: .80;
+			  margin-top: -200px;
+			  margin-left: 585px;
+		}
+		  
+		.beigecircle{
+			  width: 200px;
+              height: 200px;
+              background: #c7b9a5;
+              border-radius: 50%;
+			  opacity: .80;
+			  margin-top: -200px;
+			  margin-left: 735px;
+		}
+		
+		.D{
+			font-size: 130px;
+			margin-top: -180px;
+			position: absolute;
+			margin-left: 55px;
+		}
+		
+		.E{
+			font-size: 130px;
+			margin-top: -180px;
+			margin-left: 200px;
+			position: absolute;
+				}
+		
+		.S{
+			font-size: 130px;
+			margin-top: -180px;
+			margin-left: 350px;
+			position: absolute;
+		}
+		
+		.three{
+			font-size: 130px;
+			margin-top: -180px;
+			margin-left: 500px;
+			position: absolute;
+		}
+		
+		.five{
+			font-size: 130px;
+			margin-top: -180px;
+			margin-left: 650px;
+			position: absolute;
+		}
+		
+		.zero{
+			font-size: 130px;
+			margin-top: -180px;
+			margin-left: 800px;
+			position: absolute;
+		}	
+		
+		.sbgc{
+			 width: 80px;
+             height: 80px;
+             background: #c7b9a5;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: 60px;
+	        	}
+		
+		.sgc{
+			 width: 80px;
+             height: 80px;
+             background: #00b3a6;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 60px;
+		}
+		
+		.syc{
+			 width: 80px;
+             height: 80px;
+             background: #ffd746;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 120px;
+		}
+		
+		.soc{
+			 width: 80px;
+             height: 80px;
+             background: #fd8100;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 180px;
+		}
+		
+		.spc{
+			 width: 80px;
+             height: 80px;
+             background: #f18287;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 240px;
+		}
+		
+		.sbc{
+			 width: 80px;
+             height: 80px;
+             background: #85d3ea;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 390px;
+			}
+		.slc{
+			 width: 80px;
+             height: 80px;
+             background: #ae9cb5;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 450px;
+		}
+		
+		.ssbgc{
+			 width: 80px;
+             height: 80px;
+             background: #c7b9a5;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 510px;
+		}
+		
+		.ssgc{
+			 width: 80px;
+             height: 80px;
+             background: #00b3a6;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 570px;
+		}
+		
+		.ssyc{
+			 width: 80px;
+             height: 80px;
+             background: #ffd746;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 630px;
+		}
+		
+		.ssoc{
+		     width: 80px;
+             height: 80px;
+             background: #fd8100;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 690px;
+		}
+		
+		.sspc{
+			 width: 80px;
+             height: 80px;
+             background: #f18287;
+			 opacity: .80;
+             border-radius: 50%;
+			 margin-top: -80px;
+			 margin-left: 750px;
+		}
+		
+		.sE{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 25px;
+			position: absolute;
+				}
+		.sD{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 82px;
+			position: absolute;
+		}
+		
+		.G{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 141px;
+			position: absolute;
+		}
+		
+		.A{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 203px;
+			position: absolute;
+		}
+		
+		.R{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 264px;
+			position: absolute;
+		}
+		
+		.J{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 415px;
+			position: absolute;
+		}
+		
+		.I{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 483px;
+			position: absolute;
+		}
+		
+		.M{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 528px;
+			position: absolute;
+		}
+		
+		.tE{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 595px;
+			position: absolute;
+		}
+		
+		.N{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 652px;
+			position: absolute;
+		}
+		
+		.fE{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 714px;
+			position: absolute;
+		}
+		
+		.Z{
+			font-size: 50px;
+			margin-top: -70px;
+			margin-left: 775px;
+			position: absolute;
+		}		
+		
+		.tpc{
+			width: 30px;
+            height: 30px;
+            background: #f18287;
+            border-radius: 50%;
+			margin-top: 50px;
+		}
+		
+		.tgc{
+			width: 30px;
+            height: 30px;
+            background: #00b3a6;
+            border-radius: 50%;
+			margin-top: 50px;
+		}
+		
+		.tlc{
+			width: 30px;
+            height: 30px;
+            background: #ae9cb5;
+            border-radius: 50%;
+			margin-top: 50px;
+		}
+		
+		.tyc{
+			width: 30px;
+            height: 30px;
+            background: #ffd746;
+            border-radius: 50%;
+			margin-top: 50px;
+		}
+		
+		
+		
+		.Calculator{
+			font-size: 25px;
+			margin-top: -270px;
+			margin-left: 50px;
+			}
+		
+		a {
+           color: white;
+
+		   }
+		
+		.Rain{
+			font-size: 25px;
+			margin-top: 50px;
+			margin-left: 50px
+		}
+		
+		.dieter{
+			font-size: 25px;
+			margin-top: 50px;
+			margin-left: 50px;
+		}
+		
+		.portrait{
+			font-size: 25px;
+			margin-top: 50px;
+			margin-left: 50px
+		}
+		
 		}
 		
 	</style>
@@ -18,14 +385,64 @@
 </head>
 
 <body>
-<h1>Edgar Jimenez - DES350</h1>
-       <a href="Calculator.html" target="_blank">Calculator</a>
-       
-	   <a href="Rain Calculator.html" target="_blank">Rain Cloudculator</a>
 	
-	   <a href="Dieterrams.html" target="_blank">Dieter Rams 10</a>
+	<div class="circle"></div>
+	<div class="orangecircle"></div>
+	<div class="yellowcircle"></div>
+	<div class="greencircle"></div>
+	<div class="bluecircle"></div>
+	<div class="beigecircle"></div>
 	
-	   <a href="Self-emoji.jpg" target="_blank">Portrait</a>
+	<div class="D">D</div>
+	<div class="E">E</div>
+	<div class="S">S</div>
+	<div class="three">3</div>
+	<div class="five">5</div>
+	<div class="zero">0</div>
+	
+	<div class="sbgc"></div>
+	<div class="sgc"></div>
+	<div class="syc"></div>
+	<div class="soc"></div>
+	<div class="spc"></div>
+	
+	<div class="sbc"></div>
+	<div class="slc"></div>
+	<div class="ssbgc"></div>
+	<div class="ssgc"></div>
+	<div class="ssyc"></div>
+	<div class="ssoc"></div>
+	<div class="sspc"></div>
+	
+	<div class="sE">E</div>
+	<div class="sD">D</div>
+	<div class="G">G</div>
+	<div class="A">A</div>
+	<div class="R">R</div>
+	
+	<div class="J">J</div>
+	<div class="I">I</div>
+	<div class="M">M</div>
+	<div class="tE">E</div>
+	<div class="N">N</div>
+	<div class="fE">E</div>
+	<div class="Z">Z</div>
+	
+	<div class="tpc"></div>
+	<div class="tgc"></div>
+	<div class="tlc"></div>
+	<div class="tyc"></div>
+	
+	
+
+	
+	   <div class="Calculator"> <a href="Calculator.html" target="_blank">Calculator</a></div>
+	   
+	   <div class="Rain"><a href="Rain Calculator.html" target="_blank">Rain Cloudculator</a></div>
+	
+	   <div class="dieter"> <a href="Dieterrams.html" target="_blank">Dieter Rams 10</a></div>
+	
+	   <div class="portrait"> <a href="Self-emoji.jpg" target="_blank">Portrait</a></div>
 	
 </body>
 </html>
